@@ -1,0 +1,12 @@
+{
+  "models": [
+    {
+      "id": "sensor",
+      "label": "Sensor"
+    },
+    {
+      "id": "financial",
+      "label": "Financial"
+    }
+  ]
+}

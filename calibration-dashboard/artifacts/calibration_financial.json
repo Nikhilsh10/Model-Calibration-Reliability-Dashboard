@@ -1,0 +1,246 @@
+{
+  "model_id": "financial",
+  "n_bins": 10,
+  "eval_set_size": 1250,
+  "eval_set_positives": 66,
+  "cal_set_size": 1250,
+  "cal_set_positives": 65,
+  "isotonic_overfit_note": "Isotonic fit on 1250 samples (65 positives). ECE=0.0046 (excellent average calibration) but MCE=0.5286 (still-poor worst bin). Near-perfect average + bad worst bin is the textbook signature of isotonic overfitting the dense bins while leaving one sparse bin badly calibrated. Lead with Platt (ECE=0.0356) for any claim you can defend under scrutiny.",
+  "raw": {
+    "ece": 0.17115813556342926,
+    "mce": 0.6043692555956344,
+    "brier": 0.06353640857507906,
+    "bins": [
+      {
+        "bin_lower": 0.0,
+        "bin_upper": 0.1,
+        "predicted_mean": 0.056245,
+        "observed_freq": 0.0,
+        "count": 478
+      },
+      {
+        "bin_lower": 0.1,
+        "bin_upper": 0.2,
+        "predicted_mean": 0.148401,
+        "observed_freq": 0.0,
+        "count": 312
+      },
+      {
+        "bin_lower": 0.2,
+        "bin_upper": 0.3,
+        "predicted_mean": 0.249888,
+        "observed_freq": 0.0,
+        "count": 165
+      },
+      {
+        "bin_lower": 0.3,
+        "bin_upper": 0.4,
+        "predicted_mean": 0.343499,
+        "observed_freq": 0.0,
+        "count": 109
+      },
+      {
+        "bin_lower": 0.4,
+        "bin_upper": 0.5,
+        "predicted_mean": 0.455469,
+        "observed_freq": 0.0,
+        "count": 41
+      },
+      {
+        "bin_lower": 0.5,
+        "bin_upper": 0.6,
+        "predicted_mean": 0.552855,
+        "observed_freq": 0.0,
+        "count": 27
+      },
+      {
+        "bin_lower": 0.6,
+        "bin_upper": 0.7,
+        "predicted_mean": 0.646036,
+        "observed_freq": 0.041667,
+        "count": 24
+      },
+      {
+        "bin_lower": 0.7,
+        "bin_upper": 0.8,
+        "predicted_mean": 0.759514,
+        "observed_freq": 0.641026,
+        "count": 39
+      },
+      {
+        "bin_lower": 0.8,
+        "bin_upper": 0.9,
+        "predicted_mean": 0.846713,
+        "observed_freq": 0.48,
+        "count": 25
+      },
+      {
+        "bin_lower": 0.9,
+        "bin_upper": 1.0,
+        "predicted_mean": 0.924366,
+        "observed_freq": 0.931034,
+        "count": 29
+      }
+    ]
+  },
+  "platt": {
+    "ece": 0.03561035175974937,
+    "mce": 0.4666269557878228,
+    "brier": 0.020301991843855345,
+    "bins": [
+      {
+        "bin_lower": 0.0,
+        "bin_upper": 0.1,
+        "predicted_mean": 0.01083,
+        "observed_freq": 0.0,
+        "count": 1118
+      },
+      {
+        "bin_lower": 0.1,
+        "bin_upper": 0.2,
+        "predicted_mean": 0.143817,
+        "observed_freq": 0.032258,
+        "count": 31
+      },
+      {
+        "bin_lower": 0.2,
+        "bin_upper": 0.3,
+        "predicted_mean": 0.244158,
+        "observed_freq": 0.0,
+        "count": 15
+      },
+      {
+        "bin_lower": 0.3,
+        "bin_upper": 0.4,
+        "predicted_mean": 0.351555,
+        "observed_freq": 0.818182,
+        "count": 33
+      },
+      {
+        "bin_lower": 0.4,
+        "bin_upper": 0.5,
+        "predicted_mean": 0.442986,
+        "observed_freq": 0.384615,
+        "count": 13
+      },
+      {
+        "bin_lower": 0.5,
+        "bin_upper": 0.6,
+        "predicted_mean": 0.563461,
+        "observed_freq": 0.695652,
+        "count": 23
+      },
+      {
+        "bin_lower": 0.6,
+        "bin_upper": 0.7,
+        "predicted_mean": 0.630833,
+        "observed_freq": 1.0,
+        "count": 15
+      },
+      {
+        "bin_lower": 0.7,
+        "bin_upper": 0.8,
+        "predicted_mean": 0.725571,
+        "observed_freq": 1.0,
+        "count": 2
+      },
+      {
+        "bin_lower": 0.8,
+        "bin_upper": 0.9,
+        "predicted_mean": null,
+        "observed_freq": null,
+        "count": 0
+      },
+      {
+        "bin_lower": 0.9,
+        "bin_upper": 1.0,
+        "predicted_mean": null,
+        "observed_freq": null,
+        "count": 0
+      }
+    ],
+    "delta_ece": -0.13554778,
+    "delta_mce": -0.1377423,
+    "delta_brier": -0.04323442
+  },
+  "isotonic": {
+    "ece": 0.0046309245050739824,
+    "mce": 0.5285771483120493,
+    "brier": 0.013339816489574928,
+    "bins": [
+      {
+        "bin_lower": 0.0,
+        "bin_upper": 0.1,
+        "predicted_mean": 0.000961,
+        "observed_freq": 0.001717,
+        "count": 1165
+      },
+      {
+        "bin_lower": 0.1,
+        "bin_upper": 0.2,
+        "predicted_mean": null,
+        "observed_freq": null,
+        "count": 0
+      },
+      {
+        "bin_lower": 0.2,
+        "bin_upper": 0.3,
+        "predicted_mean": null,
+        "observed_freq": null,
+        "count": 0
+      },
+      {
+        "bin_lower": 0.3,
+        "bin_upper": 0.4,
+        "predicted_mean": null,
+        "observed_freq": null,
+        "count": 0
+      },
+      {
+        "bin_lower": 0.4,
+        "bin_upper": 0.5,
+        "predicted_mean": 0.471423,
+        "observed_freq": 1.0,
+        "count": 2
+      },
+      {
+        "bin_lower": 0.5,
+        "bin_upper": 0.6,
+        "predicted_mean": 0.522792,
+        "observed_freq": 1.0,
+        "count": 1
+      },
+      {
+        "bin_lower": 0.6,
+        "bin_upper": 0.7,
+        "predicted_mean": 0.60868,
+        "observed_freq": 0.634615,
+        "count": 52
+      },
+      {
+        "bin_lower": 0.7,
+        "bin_upper": 0.8,
+        "predicted_mean": 0.714286,
+        "observed_freq": 0.666667,
+        "count": 3
+      },
+      {
+        "bin_lower": 0.8,
+        "bin_upper": 0.9,
+        "predicted_mean": 0.863636,
+        "observed_freq": 0.952381,
+        "count": 21
+      },
+      {
+        "bin_lower": 0.9,
+        "bin_upper": 1.0,
+        "predicted_mean": 0.981596,
+        "observed_freq": 1.0,
+        "count": 1
+      }
+    ],
+    "delta_ece": -0.16652721,
+    "delta_mce": -0.07579211,
+    "delta_brier": -0.05019659
+  }
+}
