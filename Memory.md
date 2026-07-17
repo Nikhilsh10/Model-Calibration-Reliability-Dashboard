@@ -5,7 +5,7 @@ Running context file for this project. Update as decisions get made; don't let t
 ## Project identity
 - Name: Model Calibration & Reliability Dashboard
 - Relationship to existing work: addendum to StreamSentinel (real-time anomaly detection system), not a standalone flagship. Positioned this way explicitly in Rules.md and Design.md to avoid overclaiming.
-- Base model(s) used: StreamSentinel sensor/financial ensemble (Isolation Forest + Autoencoder). Verified metrics already on record: Sensor ROC-AUC 0.9952 / F1 0.8392, Financial ROC-AUC 0.9893 / F1 0.7407, anomaly rate 5.5%, avg latency 4.65ms (provenance unknown), p95 inference latency < 10ms (50s rolling window).
+- Base model(s) used: StreamSentinel sensor/financial ensemble (Isolation Forest + Autoencoder). Verified metrics already on record: Sensor ROC-AUC 0.9952 / F1 0.8392, Financial ROC-AUC 0.9893 / F1 0.7407, anomaly rate 5.5%, avg latency 4.65ms (sourced from pre-project spec files), p95 inference latency < 10ms (50s rolling window).
 
 ## Status (update this section as phases complete)
 - [ ] Phase 0 — kill-criteria check (bin sample counts) — **not yet run**
