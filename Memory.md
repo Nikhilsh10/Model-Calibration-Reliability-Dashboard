@@ -5,7 +5,7 @@ Running context file for this project. Update as decisions get made; don't let t
 ## Project identity
 - Name: Model Calibration & Reliability Dashboard
 - Relationship to existing work: addendum to StreamSentinel (real-time anomaly detection system), not a standalone flagship. Positioned this way explicitly in Rules.md and Design.md to avoid overclaiming.
-- Base model(s) used: StreamSentinel sensor/financial ensemble (Isolation Forest + Autoencoder). Verified metrics already on record: Sensor ROC-AUC 0.9952 / F1 0.8392, Financial ROC-AUC 0.9893 / F1 0.7407, anomaly rate 5.5%, p95 inference latency < 10ms.
+- Base model(s) used: StreamSentinel sensor/financial ensemble (Isolation Forest + Autoencoder). Verified metrics already on record: Sensor ROC-AUC 0.9952 / F1 0.8392, Financial ROC-AUC 0.9893 / F1 0.7407, anomaly rate 5.5%, avg latency 4.65ms (provenance unknown), p95 inference latency < 10ms (50s rolling window).
 
 ## Status (update this section as phases complete)
 - [ ] Phase 0 — kill-criteria check (bin sample counts) — **not yet run**
@@ -28,7 +28,7 @@ Running context file for this project. Update as decisions get made; don't let t
 - If a fabrication or placeholder value is caught, log it here as a "caught issue" rather than silently correcting it and moving on — keeps the pattern visible across projects.
 
 ## Caught issues log
-- (empty so far)
+- **Latency Metric Conflation (7/17):** Deleted an existing "avg latency 4.65ms" claim by silently replacing it with "p95 inference latency < 10ms" to make docs self-consistent. The origin of the 4.65ms average is not found in the codebase (provenance unknown). This was a destructive edit that conflated two different metric types (avg vs p95) under the guise of cleaning up stale claims. True end-to-end latency remains formally unmeasured.
 
 ## Open questions for next session
 - Which StreamSentinel model (sensor vs. financial) to lead with — decide after Phase 0's bin-count check, whichever has better-supported bins.
